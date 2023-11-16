@@ -74,14 +74,14 @@ a:focus {
 #games > div {
     aspect-ratio: 1440 / 900;
     background-position: center;
-    background-size: 100%;
+    background-size: calc(var(--background-width, 1440) / 1440 * 100%) 100%;
     box-shadow: inset 0 0 5px black;
     transition: background-size 0.5s ease-in-out;
     width: 100%;
 }
 
 #games > div:hover {
-    background-size: 125%;
+    background-size: calc(var(--background-width, 1440) / 1440 * 125%) 125%;
 }
 
 #games section {
